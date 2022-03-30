@@ -1,0 +1,11 @@
+vim /etc/hosts  改變controller and node 的 IP
+192.168.0.0 name
+192.168.0.1 name2
+
+
+inventory inventory.ini 分組
+
+連線:
+ansible web1 -i inventory.ini -m ping --private-key=/home/kali/.ssh/ansible
+
+ansible-playbook ping.yaml -i inventory.ini
